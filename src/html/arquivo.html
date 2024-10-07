@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../output.css" rel="stylesheet">
+  <title>Arquivo vídeo</title>
+</head>
+<body class="bg-white">
+
+<!-- Navbar -->
+
+  <nav class="shadow-2xl fixed w-full h-28 items-center z-50 bg-darkBlue-500 grid grid-cols-4">
+      <div class="col-span-1 flex px-10">
+          <a>
+            <img class="w-28" src="../img/Logo Eptran.png" alt="Logo">
+          </a>
+      </div>
+      <nav class="col-span-2 flex justify-center">
+          <a href="ensino.html" class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Atividade</a>
+          <a href="#" class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Consquistas</a>
+          <a href="sobrenos.html" class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Sobre Nós</a>
+          <a href="faleConosco.html" class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Fale Conosco</a>
+          <a href="#" class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Administrador</a>
+      </nav>
+      <div class="flex justify-end items-start col-span-1 px-5 ">
+        <img class="w-12 mr-4" src="../img/circle-user-round.png" alt="Foto Perfil">
+      </div>
+    </nav>
+
+  <!-- Sidebar -->
+
+  <aside class="sidebar fixed top-0 bottom-0 overflow-y-auto p-2 w-60 bg-darkBlue-400">
+    <div class="px-4 mt-32 flex justify-center text-white font-bold text-3xl">
+      <h1>
+        Admin
+      </h1>
+    </div>
+    <hr class="w-auto my-4 bg-white  rounded-sm">
+    <div class="grid grid-cols-7 align-middle items-center">
+      <img src="../img/book-text.png" class="w-5"> <p class="text-white p-2 hover:underline col-span-6 text-xl"><a href="#">Conteudo</a></p>
+      <img src="../img/video.png" class="w-5"> <p class="text-white p-2 hover:underline col-span-6 text-xl"><a href="#">Vídeos</a></p>
+      <img src="../img/message-square-warning.png" class="w-5"> <p class="text-white p-2 hover:underline col-span-6 text-xl"><a href="#">Índices</a></p>
+      <img src="../img/user-round.png" class="w-5"> <p class="text-white p-2 hover:underline col-span-6 text-xl"><a href="#">Usuário</a></p>
+      <img src="../img/tickets.png" class="w-5"> <p class="text-white p-2 hover:underline col-span-6 text-xl"><a href="#">Ticket</a></p>
+    </div>  
+  </aside>
+
+  <!-- Main -->
+
+  <main class="w-screen h-screen ml-56 pl-14 pt-36 mr-80">
+    <h1 class="flex text-darkBlue-500 font-bold justify-start text-3xl pl-10 pt-10">ARQUIVO</h1>
+    <hr class="bg-darkBlue-500 w-auto my-4 border-1 border-darkBlue-500 rounded-full ml-10 mr-64">
+
+
+    <div class="px-10 grid grid-cols-2 pt-10">
+    <!-- Primeiro Canto -->
+      <div class="col-span-1">
+        <h2 class="font-semibold mt-1 text-darkBlue-500 text-xl">DESCRIÇÂO</h2>
+        <hr class="bg-darkBlue-400 w-auto border-1 border-darkBlue-500 rounded-full mr-64">
+        <br>
+          <h3 class="font-semibold mt-1 text-darkBlue-500 text-md">NOME DO VÍDEO</h3>
+            <div class="w-auto mr-64">
+              <input type="text" class="border-darkBlue-500 border-2 rounded-md h-12 w-96" placeholder="  Vídeo Educativo EPTRAN">
+            </div>
+            <h3 class="font-semibold mt-8 text-darkBlue-500 text-md">DESCRIÇÃO DO VÍDEO</h3>
+            <div class="w-auto mr-64">
+              <textarea class="border-2 border-darkBlue-400 rounded-md w-96 resize-none	" name="descricao" id="Descricao" rows="4" placeholder="  Vídeo Educativo Eptran"></textarea>
+            </div>
+          <h3 class="font-semibold text-darkBlue-500 text-md mt-4">MINIATURA</h3>
+
+          <div class="w-40 h-28 border-dashed border-2 border-darkBlue-300 rounded-lg flex flex-col justify-center items-center">
+            <img src="../img/docs.png" class="w-10 h-10 mb-2">
+            <p class="text-darkBlue-400 text-center text-[10px]">Fazer upload do arquivo</p>
+        </div>
+        <div>
+            <h3 class="font-semibold mt-8 text-darkBlue-500 text-md">CLASSIFICAÇÃO</h3>
+            <select
+    class="text-darkBlue-300 block font-semibold p-2 text-sm shadow-md rounded-lg mb-6 cursor-pointer border-2 border-darkBlue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 w-60"
+    name="selecionar">
+    <option class="text-darkBlue-300" value="selecionar" selected>Selecionar</option>
+    <option class="text-darkBlue-500" value="user-ativo">Ensino Médio</option>
+    <option class="text-darkBlue-500" value="user-ativo">Ensino Fundamental</option>
+    <option class="text-darkBlue-500" value="user-inativo">Séries Iniciais</option>
+</select>
+
+        </div>
+        
+        </div>
+    <!-- Segundo Canto -->
+      <div class="col-span-1 w-80">
+        <h2 class="text-xl font-semibold">RESPOSTA</h2>
+        <hr class="bg-darkBlue-400 w-auto my-4 border-1 border-darkBlue-500 rounded-full mr-64">
+        <br>
+          <h3 class="font-semibold text-darkBlue-500 text-md">RESPOSTA AO TICKET</h3>
+          <div class="w-80">
+            <textarea class="border-2 border-black rounded-md mt-5" name="descricao" id="Descricao" rows="10" cols="80">Exemplo</textarea>
+          </div>
+      </div>
+    </div>    
+  </main>
+</body>
+</html>
