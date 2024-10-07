@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../output.css" rel="stylesheet">
+  <title>Ticket Usuario</title>
+</head>
+<body class="bg-white">
+
+<!-- Navbar -->
+
+  <nav class="shadow-2xl fixed w-full h-28 items-center z-50 bg-darkBlue-500 grid grid-cols-4">
+      <div class="col-span-1 flex px-10">
+          <a>
+            <img class="w-28" src="../img/Logo Eptran.png" alt="Logo">
+          </a>
+      </div>
+      <nav class="col-span-2 flex justify-center">
+          <a href="ensino.html" class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Atividade</a>
+          <a href="#" class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Consquistas</a>
+          <a href="sobrenos.html" class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Sobre Nós</a>
+          <a href="faleConosco.html" class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Fale Conosco</a>
+          <a href="#" class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Administrador</a>
+      </nav>
+      <div class="flex justify-end items-start col-span-1 px-5 ">
+        <img class="w-12 mr-4" src="../img/circle-user-round.png" alt="Foto Perfil">
+      </div>
+    </nav>
+
+  <!-- Sidebar -->
+
+  <aside class="sidebar fixed top-0 bottom-0 overflow-y-auto p-2 w-60 bg-darkBlue-400">
+    <div class="px-4 mt-32 flex justify-center text-white font-bold text-3xl">
+      <h1>
+        Admin
+      </h1>
+    </div>
+    <hr class="w-auto my-4 bg-white  rounded-sm">
+    <div class="grid grid-cols-7 align-middle items-center">
+      <img src="../img/book-text.png" class="w-5"> <p class="text-white p-2 hover:underline col-span-6 text-xl"><a href="#">Conteudo</a></p>
+      <img src="../img/video.png" class="w-5"> <p class="text-white p-2 hover:underline col-span-6 text-xl"><a href="#">Vídeos</a></p>
+      <img src="../img/message-square-warning.png" class="w-5"> <p class="text-white p-2 hover:underline col-span-6 text-xl"><a href="#">Estatísticas</a></p>
+      <img src="../img/user-round.png" class="w-5"> <p class="text-white p-2 hover:underline col-span-6 text-xl"><a href="#">Usuário</a></p>
+      <img src="../img/tickets.png" class="w-5"> <p class="text-white p-2 hover:underline col-span-6 text-xl"><a href="#">Suporte</a></p>
+    </div>  
+  </aside>
+
+  <!-- Main -->
+
+  <main class="w-screen h-screen pl-72 pt-36">
+    <h1 class="flex text-darkBlue-500 font-bold justify-start text-3xl pl-10 pt-10">Ticket de USUARIO</h1>
+    <hr class="bg-darkBlue-500 w-auto my-4 border-1 border-darkBlue-500 rounded-full ml-10 mr-28">
+
+
+    <div class="px-10 grid grid-cols-2 pt-10 gap-28">
+    <!-- Primeiro Canto -->
+      <div class="col-span-1">
+        <h2 class="text-xl font-semibold">DETALHES</h2>
+        <hr class="bg-darkBlue-400 w-auto my-2 border-1 border-darkBlue-500 rounded-full mr-20">
+        <br>
+        <h3 class="font-semibold text-darkBlue-500 text-md ">Nome</h3>
+          <form action="">
+            <input type="text" value="Henrique Ataide" class="text-gray-400 h-10 w-full mt-2  ">
+          </form>
+        <h3 class="pt-10 font-semibold text-darkBlue-500 text-md ">Email</h3>
+          <div class="w-auto mr-20">
+            <form action="">
+              <input type="email" value="Henrique45Ataide@gmail.com" class="text-gray-400 h-10 w-full mt-2 ">
+            </form>
+          </div>    
+        <h3 class="font-semibold text-darkBlue-500 text-md pt-10">ASSUNTO</h3>
+          <div class="w-auto mr-20">
+            <form action="">
+              <input type="text" class="text-gray-400 h-10 w-full mt-2" value="Estou com problema ao entrar no jogo" id="Assunto" Name="Assunto" disabled>
+            </form>
+            </div>
+          <h3 class="pt-10 font-semibold text-darkBlue-500 text-md">DESCRIÇÃO</h3>
+          <div class="w-auto mr-64">
+            <form action="">
+              <input class="text-gray-400 h-10 w-full mt-2 " name="descricao" id="Descricao" value="Não consigo acessar o jogo por algum motivo" disabled>
+            </form>
+          </div>
+          <h3 class="mt-5 font-semibold text-darkBlue-500 text-md">ANEXOS</h3>
+          <div class="mt-2 w-auto mr-64">
+            <form action="">
+              <input type="image" name="" id="" value="imagem">
+              <input type="image" name="" id="" value="imagem">
+            </form>
+          </div>
+          <table class="justify-center align-middle">
+            <thead>
+              <tr>
+                <th>
+                  <h3 class="col-span-1 mt-5 font-semibold text-darkBlue-500 text-md space-x-3">CRIAÇÃO DO TITCKET</h3>
+                </th>
+                <th>
+                  <h3 class="col-span-1 mt-5 font-semibold text-darkBlue-500 text-md pl-10 space-x-3">STATUS</h3>
+                </th>
+                <th>
+                  <h3 class="col-span-1 mt-5 font-semibold text-darkBlue-500 text-md space-x-3">PRIORIDADE</h3>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <form action="">
+                    <input type="date" name="data" id="data">
+                  </form>
+                </td>
+                <td>
+                  <form action="">
+                    <input type="text" name="status" id="status" value="Em Andamento" class="text-black font-semibold">
+                  </form>
+                </td>
+                <td>
+                  <form action="">
+                    <input type="text" name="prioridade" id="prioridade" value="Alta" class="text-black font-semibold">
+                  </form>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+            
+          
+          
+        </div>
+    <!-- Segundo Canto -->
+      <div class="col-span-1">
+        <h2 class="text-xl font-semibold">RESPOSTA</h2>
+        <hr class="bg-darkBlue-400 w-auto my-2 border-1 border-darkBlue-500 rounded-full mr-20">
+        <br>
+          <h3 class=" font-semibold text-darkBlue-500 text-md">RESPOSTA AO TICKET</h3>
+          <div class="w-80">
+            <form action="">
+              <textarea class="border-2 border-darkBlue-300 rounded-md mt-2 resize-none" name="descricao" id="Descricao" rows="6" cols="86" ></textarea>
+            </form>
+          </div>
+          <div class="mt-14 flex justify-end mr-20 gap-9">
+            <form action="">
+              <input type="button" class="bg-white border-darkBlue-500 border-2 rounded-md px-10 h-12 text-darkBlue-500 font-bold" value="CANCELAR">
+            </form>
+            <form action="">
+              <input type="button" class="bg-darkBlue-500 border-darkBlue-500 border-2 rounded-md px-12 h-12 text-white font-bold hover:bg-slate-400" value="ENVIAR">
+            </form>
+          </div>
+
+      </div>
+    </div>    
+  </main>
+</body>
+</html>
