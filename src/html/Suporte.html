@@ -92,18 +92,18 @@
             <thead>
               <tr>
                 <th>
-                  <h3 class="col-span-1 mt-5 font-semibold text-darkBlue-500 text-md space-x-3">CRIAÇÃO DO TITCKET</h3>
+                  <h3 class="col-span-1 mt-5 font-semibold text-darkBlue-500 text-md">CRIAÇÃO DO TITCKET</h3>
                 </th>
                 <th>
-                  <h3 class="col-span-1 mt-5 font-semibold text-darkBlue-500 text-md pl-10 space-x-3">STATUS</h3>
+                  <h3 class="col-span-1 mt-5 font-semibold text-darkBlue-500 text-md -ml-16">STATUS</h3>
                 </th>
                 <th>
-                  <h3 class="col-span-1 mt-5 font-semibold text-darkBlue-500 text-md space-x-3">PRIORIDADE</h3>
+                  <h3 class="col-span-1 mt-5 font-semibold text-darkBlue-500 text-md">PRIORIDADE</h3>
                 </th>
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr class="gap-x-12">
                 <td>
                   <form action="">
                     <input type="date" name="data" id="data">
@@ -111,12 +111,16 @@
                 </td>
                 <td>
                   <form action="">
-                    <input type="text" name="status" id="status" value="Em Andamento" class="text-black font-semibold">
+                    <input type="text" name="status" id="status" value="Em Andamento" class="text-black font-semibold pl-20">
                   </form>
                 </td>
                 <td>
                   <form action="">
-                    <input type="text" name="prioridade" id="prioridade" value="Alta" class="text-black font-semibold">
+                   <select name="" id="" class="font-semibold">
+                      <option value="alta">Alta</option>
+                      <option value="media">Média</option>
+                      <option value="baixa">Baixa</option>
+                   </select>
                   </form>
                 </td>
               </tr>
@@ -134,15 +138,15 @@
           <h3 class=" font-semibold text-darkBlue-500 text-md">RESPOSTA AO TICKET</h3>
           <div class="w-80">
             <form action="">
-              <textarea class="border-2 border-darkBlue-300 rounded-md mt-2 resize-none" name="descricao" id="Descricao" rows="6" cols="86" ></textarea>
+              <textarea class="border-2 border-darkBlue-300 rounded-md mt-2 resize-none pl-3 pt-3" name="descricao" id="Descricao" rows="6" cols="84" placeholder="Insira sua resposta" ></textarea>
             </form>
           </div>
-          <div class="mt-14 flex justify-end mr-20 gap-9">
+          <div class="mt-6 flex justify-end mr-20 gap-9">
             <form action="">
-              <input type="button" class="bg-white border-darkBlue-500 border-2 rounded-md px-10 h-12 text-darkBlue-500 font-bold" value="CANCELAR">
+              <input type="button" class="bg-white border-darkBlue-500 border-2 rounded-md px-10 h-12 text-darkBlue-500 font-bold hover:bg-gray-200" value="CANCELAR">
             </form>
             <form action="">
-              <input type="button" class="bg-darkBlue-500 border-darkBlue-500 border-2 rounded-md px-12 h-12 text-white font-bold hover:bg-slate-400" value="ENVIAR">
+              <input type="button" class="bg-darkBlue-500 border-darkBlue-500 border-2 rounded-md px-14 h-12 text-white font-bold hover:bg-slate-400" value="ENVIAR">
             </form>
           </div>
 
