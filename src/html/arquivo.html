@@ -36,7 +36,7 @@
         Admin
       </h1>
     </div>
-    <hr class="w-auto my-4 bg-white  rounded-sm">
+    <hr class="w-auto my-4 bg-white rounded-sm">
     <div class="grid grid-cols-7 align-middle items-center">
       <img src="../img/book-text.png" class="w-5"> <p class="text-white p-2 hover:underline col-span-6 text-xl"><a href="#">Conteudo</a></p>
       <img src="../img/video.png" class="w-5"> <p class="text-white p-2 hover:underline col-span-6 text-xl"><a href="#">Vídeos</a></p>
@@ -48,24 +48,23 @@
 
   <!-- Main -->
 
-  <main class="w-screen h-screen ml-56 pl-14 pt-36 mr-80">
+  <main class="w-auto h-screen ml-60 pl-14 pt-36 pr-10">
     <h1 class="flex text-darkBlue-500 font-bold justify-start text-3xl pl-10 pt-10">ARQUIVO</h1>
-    <hr class="bg-darkBlue-500 w-auto my-4 border-1 border-darkBlue-500 rounded-full ml-10 mr-64">
+    <hr class="bg-darkBlue-500 w-auto my-4 border-1 border-darkBlue-500 rounded-full ml-10">
 
-
-    <div class="px-10 grid grid-cols-2 pt-10">
+    <div class="px-10 grid grid-cols-2 gap-10 pt-10">
     <!-- Primeiro Canto -->
       <div class="col-span-1">
         <h2 class="font-semibold mt-1 text-darkBlue-500 text-xl">DESCRIÇÂO</h2>
-        <hr class="bg-darkBlue-400 w-auto border-1 border-darkBlue-500 rounded-full mr-64">
+        <hr class="bg-darkBlue-400 w-[600px] border-1 border-darkBlue-500 rounded-full">
         <br>
           <h3 class="font-semibold mt-1 text-darkBlue-500 text-md">NOME DO VÍDEO</h3>
-            <div class="w-auto mr-64">
+            <div class="w-auto">
               <input type="text" class="border-darkBlue-500 border-2 rounded-md h-12 w-96" placeholder="  Vídeo Educativo EPTRAN">
             </div>
             <h3 class="font-semibold mt-8 text-darkBlue-500 text-md">DESCRIÇÃO DO VÍDEO</h3>
-            <div class="w-auto mr-64">
-              <textarea class="border-2 border-darkBlue-400 rounded-md w-96 resize-none	" name="descricao" id="Descricao" rows="4" placeholder="  Vídeo Educativo Eptran"></textarea>
+            <div class="w-auto">
+              <textarea class="border-2 border-darkBlue-400 rounded-md w-96 resize-none" name="descricao" id="Descricao" rows="4" placeholder="  Vídeo Educativo Eptran"></textarea>
             </div>
           <h3 class="font-semibold text-darkBlue-500 text-md mt-4">MINIATURA</h3>
 
@@ -86,16 +85,41 @@
 
         </div>
         
-        </div>
-    <!-- Segundo Canto -->
-      <div class="col-span-1 w-80">
-        <h2 class="text-xl font-semibold">RESPOSTA</h2>
-        <hr class="bg-darkBlue-400 w-auto my-4 border-1 border-darkBlue-500 rounded-full mr-64">
-        <br>
-          <h3 class="font-semibold text-darkBlue-500 text-md">RESPOSTA AO TICKET</h3>
-          <div class="w-80">
-            <textarea class="border-2 border-black rounded-md mt-5" name="descricao" id="Descricao" rows="10" cols="80">Exemplo</textarea>
+      </div>
+    <div class="col-span-1">
+      <h2 class="text-xl font-semibold ml-20">VÍDEO</h2>
+      <hr class="bg-darkBlue-400 w-[690px] border-1 border-darkBlue-500 rounded-full ml-20">
+      <br>
+
+      <div class="">
+      <div class="w-96 h-56 bg-darkBlue-400 rounded-md ml-20"></div>
+    
+      <h1 class="text-darkBlue-500 mt-2 font-semibold text-sm ml-20">67% CONCLUÍDO</h1>
+      
+      <div class="flex mt-4 text-darkBlue-500 font-semibold text-sm">
+          <div>
+              <p class="text-xs ml-20">ARQUIVO</p>
+              <p class="text-black text-sm ml-20">arquivo.mp4</p>
           </div>
+          <div>
+              <p class="text-xs ml-20">DURAÇÃO</p>
+              <p class="text-black text-sm ml-20">3:07</p>
+          </div>
+          <div>
+              <p class="text-xs ml-20">TAMANHO</p>
+              <p class="text-black text-sm ml-20">370 MB</p>
+          </div>
+      </div>
+  
+      <!-- Botões de ação -->
+      <div class="flex justify-start mt-6 gap-4">
+          <button class="border border-darkBlue-500 text-darkBlue-500 font-semibold py-2 px-6 rounded-md ml-20">CANCELAR</button>
+          <button class="bg-darkBlue-500 text-white font-semibold py-2 px-6 rounded-md">ENVIAR</button>
+      </div>
+    </div>
+  </div>
+      
+
       </div>
     </div>    
   </main>
