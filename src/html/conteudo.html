@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
+    <title>Adm - Conteúdo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="gerenciamento.js"></script>
+</head>
+
+<body class="bg-white">
+
+    <!-- Header -->
+    <header class="shadow-xl fixed w-full h-28 items-center z-50 bg-darkBlue-500 grid grid-cols-4">
+        <div class="col-span-1 flex px-10">
+            <a>
+                <img class="w-28" src="../img/Logo Eptran.png" alt="Logo">
+            </a>
+        </div>
+        <nav class="col-span-2 flex justify-center">
+            <a href="../img/ensino.html"
+                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Atividade</a>
+            <a href="#"
+                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Conquistas</a>
+            <a href="../img/sobrenos.html"
+                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Sobre Nós</a>
+            <a href="../img/faleConosco.html"
+                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Fale Conosco</a>
+            <a href="#"
+                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Administrador</a>
+        </nav>
+        <div class="flex justify-end items-start col-span-1 px-5 ">
+            <img class="w-12 mr-4" src="../img/circle-user-round.png" alt="Foto Perfil">
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar fixed top-0 bottom-0 overflow-y-auto p-2 w-60 bg-darkBlue-600">
+        <div class="px-4 mt-32 flex justify-center text-white font-bold text-3xl">
+            <h1>
+                Admin
+            </h1>
+        </div>
+        <hr class="w-auto my-4 bg-white  rounded-sm">
+        <div class="grid grid-cols-7 align-middle items-center">
+            <img src="../img/book-text.png" class="w-5">
+            <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl"><a href="#">Conteúdo</a></p>
+            <img src="../img/video.png" class="w-5">
+            <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl"><a href="#">Vídeos</a></p>
+            <img src="../img/message-square-warning.png" class="w-5">
+            <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl"><a href="#">Estatísticas</a></p>
+            <img src="../img/user-round.png" class="w-5">
+            <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl"><a href="#">Usuários</a></p>
+            <img src="../img/tickets.png" class="w-5">
+            <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl"><a href="#">Suporte</a></p>
+        </div>
+    </aside>
+
+
+    <!-- Main -->
+    <main>
+
+        <div class="flex">
+
+            <img class="bg-darkBlue-500 rounded-lg h-14 w-14 ml-80 mt-48" src="../img/livro.png" alt="">
+
+            <h1 class="text-darkBlue-500 font-bold text-5xl pl-4 pt-48">Gestão de Conteúdo</h1>
+                
+
+        </div>
+
+        <div class="ml-72 pt-0.5 p-8">
+
+            <div class="w-full flex space-x-8 mt-20 justify-between">
+
+
+                <div class="relative">
+
+                    <div class="absolute flex items-center ps-3 pointer-events-none">
+
+                        <svg class="w-4 h-4 mt-2.5 text-darkBlue-500" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+
+                        </svg>
+                    </div>
+
+                    <input type="text" id="procurar"
+                        class="font-bold block items-center p-2 ps-10 w-80 text-sm bg-gray-100 shadow-md rounded-lg mb-6"
+                        placeholder="Procurar">
+                </div>
+
+            <div class="grid grid-cols-7">
+
+                <div>
+
+                    <select
+                        class="text-darkBlue-500 block font-semibold p-2 text-sm bg-gray-100 shadow-md rounded-lg mb-6 cursor-pointer"
+                        name="selecionar">
+                        <option class="text-darkBlue-500 font-bold" value="selecionar" selected>Ensino Médio</option>
+                        <option class="text-darkBlue-500 font-bold" value="">Ensino Fundamental</option>
+                        <option class="text-darkBlue-500 font-bold" value="">Séries Iniciais</option>
+                    </select>
+
+                </div>
+
+                <div>
+                    <select
+                        class="text-darkBlue-500 block font-semibold p-2 text-sm bg-gray-100 shadow-md rounded-lg mb-6 cursor-pointer ml-14"
+                        name="selecionar">
+                        <option class="text-darkBlue-500 font-bold" value="selecionar" selected >Mais recentes</option>
+                        <option class="text-darkBlue-500 font-bold" value="">Mais antigos</option>
+                    </select>
+                </div>
+
+            </div>
+
+                <div class="w-72">
+
+                    <button class="font-semibold w-56 h-10 mt-1 shadow-xl flex items-center bg-darkBlue-500 text-white  px-5 rounded-xl">
+                        <img class="w-7 mr-3" src="../img/circulo.png" alt="Adicionar"/>
+                        Adicionar Material
+                      </button>
+                     
+                </div>
+
+            </div>
+
+
+            <div class="w-full rounded-xl mt-16">
+
+                <div class="flex justify-between">
+
+                    <div class="rounded-xl w-44 bg-darkBlue-500">
+   
+                        <img class="border rounded-t-xl" src="../img/mat1.png" alt="">
+
+                        <div class="flex justify-between">
+
+                            <p class="text-[8px] text-white text-center ml-3 mt-2 border rounded-md w-20 h-6 pt-1">Conteúdo Eptran</p>
+
+                            <p class="text-[8px] text-white text-center ml-4 mr-8 mt-2 border rounded-md w-14 h-6 p-1">21/07/2024</p>
+
+                        </div>
+
+                        <div class="flex justify-start">
+
+                            <p class="text-[8px] text-white text-center ml-3 mt-2 border rounded-md w-8 h-6 p-1">27 PG</p>
+
+                            <p class="text-[8px] text-white text-center ml-2 mt-2 border rounded-md w-8 h-6 p-1">EM</p>
+
+                            <p class="text-[8px] text-white text-center ml-2 mt-2 border rounded-md w-10 h-6 p-1">207 MB</p>
+
+                        </div>
+
+                        <div class="flex">
+
+                            <button class="cursor-pointer">
+
+                                <img class="w-8 mt-2 ml-3" src="../img/pontinhos.png" alt="">
+                                
+                            </button>
+
+                            
+                        </div>
+                        
+                    </div>
+   
+                    <!-- <div class="rounded-xl w-44 bg-darkBlue-500">
+   
+                        <img class="rounded-t-xl" src="../img/mat1.png" alt="">
+
+                        <div class="flex justify-between">
+
+                            <p class="text-[8px] text-white ml-3 mt-2">Conteúdo Eptran</p>
+
+                            <p class="text-[8px] text-white mr-8 mt-2">21/07/2024</p>
+
+                        </div>
+
+                        <div class="flex justify-start">
+
+                            <p class="text-[8px] text-white ml-3 mt-1">27 PG</p>
+
+                            <p class="text-[8px] text-white ml-4 mt-1">EM</p>
+
+                            <p class="text-[8px] text-white ml-6 mt-1">207MB</p>
+
+                        </div>
+
+                    </div>
+   
+                    <div class="rounded-xl w-44 bg-darkBlue-500">
+   
+                        <img class="rounded-t-xl" src="../img/mat1.png" alt="">
+
+                        <div class="flex justify-between">
+
+                            <p class="text-[8px] text-white ml-3 mt-2">Conteúdo Eptran</p>
+
+                            <p class="text-[8px] text-white mr-8 mt-2">21/07/2024</p>
+
+                        </div>
+
+                        <div class="flex justify-start">
+
+                            <p class="text-[8px] text-white ml-3 mt-1">27 PG</p>
+
+                            <p class="text-[8px] text-white ml-4 mt-1">EM</p>
+
+                            <p class="text-[8px] text-white ml-6 mt-1">207MB</p>
+
+                        </div>
+   
+                    </div>
+   
+                    <div class="rounded-xl w-44 bg-darkBlue-500">
+   
+                        <img class="rounded-t-xl" src="../img/mat1.png" alt="">
+
+                        <div class="flex justify-between">
+
+                            <p class="text-[8px] text-white ml-3 mt-2">Conteúdo Eptran</p>
+
+                            <p class="text-[8px] text-white mr-8 mt-2">21/07/2024</p>
+
+                        </div>
+
+                        <div class="flex justify-start">
+
+                            <p class="text-[8px] text-white ml-3 mt-1">27 PG</p>
+
+                            <p class="text-[8px] text-white ml-4 mt-1">EM</p>
+
+                            <p class="text-[8px] text-white ml-6 mt-1">207MB</p>
+
+                        </div>
+                       
+                    </div>
+   
+                    <div class="rounded-xl w-44 bg-darkBlue-500">
+   
+                        <img class="rounded-t-xl" src="../img/mat1.png" alt="">
+
+                        <div class="flex justify-between">
+
+                            <p class="text-[8px] text-white ml-3 mt-2">Conteúdo Eptran</p>
+
+                            <p class="text-[8px] text-white mr-8 mt-2">21/07/2024</p>
+
+                        </div>
+
+                        <div class="flex justify-start">
+
+                            <p class="text-[8px] text-white ml-3 mt-1">27 PG</p>
+
+                            <p class="text-[8px] text-white ml-4 mt-1">EM</p>
+
+                            <p class="text-[8px] text-white ml-6 mt-1">207MB</p>
+
+                        </div>
+   
+                    </div>
+   
+                </div>
+   
+                <div class="flex pt-20 justify-start">
+   
+                    <div class="rounded-xl w-44 bg-darkBlue-500">
+   
+                        <img class="rounded-t-xl" src="../img/mat1.png" alt="">
+
+                        <div class="flex justify-between">
+
+                            <p class="text-[8px] text-white ml-3 mt-2">Conteúdo Eptran</p>
+
+                            <p class="text-[8px] text-white mr-8 mt-2">21/07/2024</p>
+
+                        </div>
+
+                        <div class="flex justify-start">
+
+                            <p class="text-[8px] text-white ml-3 mt-1">27 PG</p>
+
+                            <p class="text-[8px] text-white ml-4 mt-1">EM</p>
+
+                            <p class="text-[8px] text-white ml-6 mt-1">207MB</p>
+
+                        </div>
+   
+                    </div>
+   
+                </div>
+   
+            </div> -->
+
+
+        </div>
+
+
+    </main>
+
+
+</body>
+
+
+</html>
+
+
+
