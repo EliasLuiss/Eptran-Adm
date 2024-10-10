@@ -1359,9 +1359,35 @@ video {
   line-height: 2.25rem;
 }
 
+/* Tamanhos de Texto */
+.text-4xl {
+  font-size: 2.25rem; /* 36px */
+  line-height: 1.25;  
+}
+
 .text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+  font-size: 3rem; /* 48px */
+  line-height: 1.25;  
+}
+
+.text-6xl {
+  font-size:  4rem; /* 64px */
+  line-height: 1.25;  
+}
+
+.text-7xl {
+  font-size: 5rem ; /*  80px*/
+  line-height: 1.25;  
+}
+
+.text-8xl {
+  font-size: 6rem; /* 96px */
+  line-height: 1.25;  
+}
+
+.text-9xl {
+  font-size: 8rem; /* 128px */
+  line-height: 1.25;  
 }
 
 .text-\[10px\] {
