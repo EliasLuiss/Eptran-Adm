@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
+    <title>Dados Pessoais</title>
+    <script defer src="dados-usuario.js"></script>
+</head>
+
+<body class="bg-white">
+
+    <!-- Navbar -->
+
+    <header class="shadow-2xl fixed w-full h-28 items-center z-50 bg-darkBlue-500 grid grid-cols-4">
+        <div class="col-span-1 flex px-10">
+            <a>
+                <img class="w-28" src="../img/Logo Eptran.png" alt="Logo">
+            </a>
+        </div>
+        <nav class="col-span-2 flex justify-center">
+            <a href="ensino.html"
+                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Atividade</a>
+            <a href="#"
+                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Consquistas</a>
+            <a href="sobrenos.html"
+                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Sobre Nós</a>
+            <a href="faleConosco.html"
+                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Fale Conosco</a>
+            <a href="#"
+                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Administrador</a>
+        </nav>
+        <div class="flex justify-end items-start col-span-1 px-5 ">
+            <img class="w-12 mr-4" src="../img/circle-user-round.png" alt="Foto Perfil">
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar fixed top-0 bottom-0 overflow-y-auto p-2 w-60 bg-darkBlue-400">
+        <div class="px-4 mt-32 flex justify-center text-white font-bold text-3xl">
+            <h1>
+                Admin
+            </h1>
+        </div>
+        <hr class="w-auto my-4 bg-white  rounded-sm">
+        <div class="grid grid-cols-7 align-middle items-center">
+            <img src="../img/book-text.png" class="w-5">
+            <p class="text-white p-2 hover:underline col-span-6 text-xl"><a href="#">Conteudo</a></p>
+            <img src="../img/video.png" class="w-5">
+            <p class="text-white p-2 hover:underline col-span-6 text-xl"><a href="#">Vídeos</a></p>
+            <img src="../img/message-square-warning.png" class="w-5">
+            <p class="text-white p-2 hover:underline col-span-6 text-xl"><a href="#">Índices</a></p>
+            <img src="../img/user-round.png" class="w-5">
+            <p class="text-white p-2 hover:underline col-span-6 text-xl"><a href="#">Usuário</a></p>
+            <img src="../img/tickets.png" class="w-5">
+            <p class="text-white p-2 hover:underline col-span-6 text-xl"><a href="#">Ticket</a></p>
+        </div>
+    </aside>
+
+    <!-- Main -->
+
+    <main class="w-full h-full  pl-64 pt-36 mr-80">
+        <h1 class="flex text-darkBlue-500 font-bold justify-start text-3xl pl-10 pt-10">Dados Pessoais</h1>
+        <hr class="bg-darkBlue-500 my-4 border-1 border-darkBlue-500 rounded-full ml-10 mr-64">
+
+
+        <div class="px-10 grid grid-cols-2 pt-10">
+            <!-- Canto esquerdo -->
+            <div class="col-span-1">
+                <h2 class="text-xl font-semibold">DADOS PESSOAIS</h2>
+                <hr class="bg-darkBlue-400 w-auto my-4 border-1 border-darkBlue-500 rounded-full mr-64">
+                <br>
+
+                <form action="">
+                    <h3 class="font-semibold text-darkBlue-400">NOME</h3>
+
+                    <div class="flex items-center mb-5">
+                        <input class="w-2/4 border-darkBlue-300 border rounded-md h-8 pl-2" placeholder=" NOME COMPLETO DO USUÁRIO" type="text" id="nome">
+                        <svg width="20px" height="20px" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"
+                            fill="#000000" class="ml-2">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M2.25,12.9378906 L2.25,15.75 L5.06210943,15.75 L13.3559575,7.45615192 L10.5438481,4.64404249 L2.25,12.9378906 Z M15.5306555,5.28145396 C15.8231148,4.98899458 15.8231148,4.5165602 15.5306555,4.22410082 L13.7758992,2.46934454 C13.4834398,2.17688515 13.0110054,2.17688515 12.718546,2.46934454 L11.3462366,3.84165394 L14.1583461,6.65376337 L15.5306555,5.28145396 Z"
+                                    fill="#003966"></path>
+                            </g>
+                        </svg>
+                    </div>
+
+
+                    <h3 class="font-semibold text-darkBlue-400">E-MAIL</h3>
+                    <div class="flex items-center mb-5">
+                        <input class="w-2/4 border-darkBlue-300 border rounded-md h-8 pl-2" type="text" id="email">
+                        <svg width="20px" height="20px" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"
+                            fill="#000000" class="ml-2">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M2.25,12.9378906 L2.25,15.75 L5.06210943,15.75 L13.3559575,7.45615192 L10.5438481,4.64404249 L2.25,12.9378906 Z M15.5306555,5.28145396 C15.8231148,4.98899458 15.8231148,4.5165602 15.5306555,4.22410082 L13.7758992,2.46934454 C13.4834398,2.17688515 13.0110054,2.17688515 12.718546,2.46934454 L11.3462366,3.84165394 L14.1583461,6.65376337 L15.5306555,5.28145396 Z"
+                                    fill="#003966"></path>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <h3 class="mt-4 font-semibold text-darkBlue-400">SENHA</h3>
+                    <div class="flex items-center mb-5">
+                        <input class="w-2/4 border-darkBlue-300 border rounded-md h-8 pl-2" type="password" id="senha">
+                        <svg width="20px" height="20px" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"
+                            fill="#000000" class="ml-2">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M2.25,12.9378906 L2.25,15.75 L5.06210943,15.75 L13.3559575,7.45615192 L10.5438481,4.64404249 L2.25,12.9378906 Z M15.5306555,5.28145396 C15.8231148,4.98899458 15.8231148,4.5165602 15.5306555,4.22410082 L13.7758992,2.46934454 C13.4834398,2.17688515 13.0110054,2.17688515 12.718546,2.46934454 L11.3462366,3.84165394 L14.1583461,6.65376337 L15.5306555,5.28145396 Z"
+                                    fill="#003966"></path>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <h3 class="mt-4 font-semibold text-darkBlue-400">DATA DE NASCIMENTO</h3>
+                    <div class="flex items-center mb-5">
+                        <input class="w-2/4 border-darkBlue-300 border rounded-md h-8 pl-2" type="date" id="data-nascimento">
+                        <svg width="20px" height="20px" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"
+                            fill="#000000" class="ml-2">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M2.25,12.9378906 L2.25,15.75 L5.06210943,15.75 L13.3559575,7.45615192 L10.5438481,4.64404249 L2.25,12.9378906 Z M15.5306555,5.28145396 C15.8231148,4.98899458 15.8231148,4.5165602 15.5306555,4.22410082 L13.7758992,2.46934454 C13.4834398,2.17688515 13.0110054,2.17688515 12.718546,2.46934454 L11.3462366,3.84165394 L14.1583461,6.65376337 L15.5306555,5.28145396 Z"
+                                    fill="#003966"></path>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <h3 class="mt-4 font-semibold text-darkBlue-400">SEXO</h3>
+                    <div class="flex items-center mb-5">
+                        <select class="w-2/4 border-darkBlue-300 border rounded-md h-8 pl-2" name="selecionar" id="sexo">
+                            <option class=""" value=" selecionar" disabled selected>Selecione o seu Gênero</option>
+                            <option value="user-ativo">Feminino</option>
+                            <option value="user-inativo">Masculino</option>
+                            <option value="user-inativo">Prefiro não Informar</option>
+                        </select>
+                        <svg width="20px" height="20px" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"
+                            fill="#000000" class="ml-2">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M2.25,12.9378906 L2.25,15.75 L5.06210943,15.75 L13.3559575,7.45615192 L10.5438481,4.64404249 L2.25,12.9378906 Z M15.5306555,5.28145396 C15.8231148,4.98899458 15.8231148,4.5165602 15.5306555,4.22410082 L13.7758992,2.46934454 C13.4834398,2.17688515 13.0110054,2.17688515 12.718546,2.46934454 L11.3462366,3.84165394 L14.1583461,6.65376337 L15.5306555,5.28145396 Z"
+                                    fill="#003966"></path>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <h3 class="mt-4 font-semibold text-darkBlue-400">CEP</h3>
+                    <div class="flex items-center mb-5">
+                        <input class="w-2/4 border-darkBlue-300 border rounded-md h-8 pl-2" type="text" id="cep" name="cep">
+                        <svg width="20px" height="20px" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"
+                            fill="#000000" class="ml-2">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M2.25,12.9378906 L2.25,15.75 L5.06210943,15.75 L13.3559575,7.45615192 L10.5438481,4.64404249 L2.25,12.9378906 Z M15.5306555,5.28145396 C15.8231148,4.98899458 15.8231148,4.5165602 15.5306555,4.22410082 L13.7758992,2.46934454 C13.4834398,2.17688515 13.0110054,2.17688515 12.718546,2.46934454 L11.3462366,3.84165394 L14.1583461,6.65376337 L15.5306555,5.28145396 Z"
+                                    fill="#003966"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <h3 class="mt-4 font-semibold text-darkBlue-400">ESTADO</h3>
+                    <div class="flex items-center mb-5">
+                        <input class="w-2/4 border-darkBlue-300 border rounded-md h-8 pl-2" type="text" id="uf" name="uf">
+                        <svg width="20px" height="20px" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"
+                            fill="#000000" class="ml-2">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M2.25,12.9378906 L2.25,15.75 L5.06210943,15.75 L13.3559575,7.45615192 L10.5438481,4.64404249 L2.25,12.9378906 Z M15.5306555,5.28145396 C15.8231148,4.98899458 15.8231148,4.5165602 15.5306555,4.22410082 L13.7758992,2.46934454 C13.4834398,2.17688515 13.0110054,2.17688515 12.718546,2.46934454 L11.3462366,3.84165394 L14.1583461,6.65376337 L15.5306555,5.28145396 Z"
+                                    fill="#003966"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <h3 class="mt-4 font-semibold text-darkBlue-400">CIDADE</h3>
+                    <div class="flex items-center mb-5">
+                        <input name="cidade" id="cidade" class="w-2/4 border-darkBlue-300 border rounded-md h-8 pl-2" type="text">
+                        <svg width="20px" height="20px" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"
+                            fill="#000000" class="ml-2">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M2.25,12.9378906 L2.25,15.75 L5.06210943,15.75 L13.3559575,7.45615192 L10.5438481,4.64404249 L2.25,12.9378906 Z M15.5306555,5.28145396 C15.8231148,4.98899458 15.8231148,4.5165602 15.5306555,4.22410082 L13.7758992,2.46934454 C13.4834398,2.17688515 13.0110054,2.17688515 12.718546,2.46934454 L11.3462366,3.84165394 L14.1583461,6.65376337 L15.5306555,5.28145396 Z"
+                                    fill="#003966"></path>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <h3 class="mt-4 font-semibold text-darkBlue-400">BAIRRO</h3>
+                    <div class="flex items-center mb-5">
+                        <input name="bairro" id="bairro" class="w-2/4 border-darkBlue-300 border rounded-md h-8 pl-2" type="text">
+                        <svg width="20px" height="20px" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"
+                            fill="#000000" class="ml-2">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M2.25,12.9378906 L2.25,15.75 L5.06210943,15.75 L13.3559575,7.45615192 L10.5438481,4.64404249 L2.25,12.9378906 Z M15.5306555,5.28145396 C15.8231148,4.98899458 15.8231148,4.5165602 15.5306555,4.22410082 L13.7758992,2.46934454 C13.4834398,2.17688515 13.0110054,2.17688515 12.718546,2.46934454 L11.3462366,3.84165394 L14.1583461,6.65376337 L15.5306555,5.28145396 Z"
+                                    fill="#003966"></path>
+                            </g>
+                        </svg>
+                    </div>
+            </div>
+
+            <!-- Segundo Canto -->
+            <div class="col-span-1 w-full h-full">
+                <h2 class="text-xl font-semibold">FOTO</h2>
+                <hr class="bg-darkBlue-400 w-auto my-4 border-1 border-darkBlue-500 rounded-full mr-64">
+                <br>
+
+                <div class="bg-gray  w-2/4 h-56 align-middle flex flex-col justify-center items-center text-darkBlue-500 font-semibold">
+                    <svg class="cursor-pointer" width="181px" height="181px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path opacity="0.5"
+                                d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                                fill="#72A4E9"></path>
+                            <path
+                                d="M16.807 19.0112C15.4398 19.9504 13.7841 20.5 12 20.5C10.2159 20.5 8.56023 19.9503 7.193 19.0111C6.58915 18.5963 6.33109 17.8062 6.68219 17.1632C7.41001 15.8302 8.90973 15 12 15C15.0903 15 16.59 15.8303 17.3178 17.1632C17.6689 17.8062 17.4108 18.5964 16.807 19.0112Z"
+                                fill="#72A4E9"></path>
+                            <path
+                                d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3432 6 9.00004 7.34315 9.00004 9C9.00004 10.6569 10.3432 12 12 12Z"
+                                fill="#72A4E9"></path>
+                        </g>
+                    </svg>
+                    Adicione ou altere a foto de perfil aqui
+                </div>
+
+                <h2 class="text-xl font-semibold mt-6">ESCOLARIDADE</h2>
+                <hr class="bg-darkBlue-400 w-auto my-4 border-1 border-darkBlue-500 rounded-full mr-64">
+                <br>
+
+                <h3 class="font-semibold text-darkBlue-400">ESCOLA</h3>
+                <div class="flex items-center mb-5">
+                    <input id="cidade" class="w-2/4 border-darkBlue-300 border rounded-md h-8 pl-2" type="text">
+                    <svg width="20px" height="20px" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"
+                        fill="#000000" class="ml-2">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M2.25,12.9378906 L2.25,15.75 L5.06210943,15.75 L13.3559575,7.45615192 L10.5438481,4.64404249 L2.25,12.9378906 Z M15.5306555,5.28145396 C15.8231148,4.98899458 15.8231148,4.5165602 15.5306555,4.22410082 L13.7758992,2.46934454 C13.4834398,2.17688515 13.0110054,2.17688515 12.718546,2.46934454 L11.3462366,3.84165394 L14.1583461,6.65376337 L15.5306555,5.28145396 Z"
+                                fill="#003966"></path>
+                        </g>
+                    </svg>
+                </div>
+                <h3 class="mt-4 font-semibold text-darkBlue-400">SÉRIE</h3>
+                <div class="flex items-center mb-10">
+                    <input id="cidade" class="w-2/4 border-darkBlue-300 border rounded-md h-8 pl-2" type="text">
+                    <svg width="20px" height="20px" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"
+                        fill="#000000" class="ml-2">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M2.25,12.9378906 L2.25,15.75 L5.06210943,15.75 L13.3559575,7.45615192 L10.5438481,4.64404249 L2.25,12.9378906 Z M15.5306555,5.28145396 C15.8231148,4.98899458 15.8231148,4.5165602 15.5306555,4.22410082 L13.7758992,2.46934454 C13.4834398,2.17688515 13.0110054,2.17688515 12.718546,2.46934454 L11.3462366,3.84165394 L14.1583461,6.65376337 L15.5306555,5.28145396 Z"
+                                fill="#003966"></path>
+                        </g>
+                    </svg>
+                </div>
+
+
+                <input type="button"
+                    class="bg-white border-darkBlue-500 border-2 rounded-md px-10 h-12 text-darkBlue-500 font-bold cursor-pointer"
+                    value="CANCELAR">
+                <input type="button"
+                    class="bg-darkBlue-500 border-darkBlue-500 border-2 rounded-md px-12 h-12 text-white font-bold hover:bg-slate-400 cursor-pointer"
+                    value="ENVIAR">
+                </form>
+
+            </div>
+    </main>
+</body>
+
+</html>
