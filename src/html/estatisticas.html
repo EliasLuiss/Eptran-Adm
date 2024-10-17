@@ -1,90 +1,226 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../output.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
     <title>Estatísticas</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="gerenciamento.js"></script>
-</head>
+  </head>
 
-<body class="bg-white">
-
-
+  <body class="bg-white">
     <!-- Header -->
-    <header class="shadow-xl fixed w-full h-28 items-center z-50 bg-darkBlue-500 grid grid-cols-4">
-        <div class="col-span-1 flex px-10">
-            <a>
-                <img class="w-28" src="../img/Logo Eptran.png" alt="Logo">
-            </a>
-        </div>
-        <nav class="col-span-2 flex justify-center">
-            <a href="../img/ensino.html"
-                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Atividade</a>
-            <a href="#"
-                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Consquistas</a>
-            <a href="../img/sobrenos.html"
-                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Sobre Nós</a>
-            <a href="../img/faleConosco.html"
-                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Fale Conosco</a>
-            <a href="#"
-                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Administrador</a>
-        </nav>
-        <div class="flex justify-end items-start col-span-1 px-5 ">
-            <img class="w-12 mr-4" src="../img/circle-user-round.png" alt="Foto Perfil">
-        </div>
+    <header
+      class="shadow-xl fixed w-full h-28 items-center z-50 bg-darkBlue-500 grid grid-cols-4"
+    >
+      <div class="col-span-1 flex px-10">
+        <a>
+          <img class="w-28" src="../img/Logo Eptran.png" alt="Logo" />
+        </a>
+      </div>
+      <nav class="col-span-2 flex justify-center">
+        <a
+          href="../img/ensino.html"
+          class="hover:underline relative text-lg text-white no-underline font-medium ml-10"
+          >Atividade</a
+        >
+        <a
+          href="#"
+          class="hover:underline relative text-lg text-white no-underline font-medium ml-10"
+          >Consquistas</a
+        >
+        <a
+          href="../img/sobrenos.html"
+          class="hover:underline relative text-lg text-white no-underline font-medium ml-10"
+          >Sobre Nós</a
+        >
+        <a
+          href="../img/faleConosco.html"
+          class="hover:underline relative text-lg text-white no-underline font-medium ml-10"
+          >Fale Conosco</a
+        >
+        <a
+          href="#"
+          class="hover:underline relative text-lg text-white no-underline font-medium ml-10"
+          >Administrador</a
+        >
+      </nav>
+      <div class="flex justify-end items-start col-span-1 px-5">
+        <img
+          class="w-12 mr-4"
+          src="../img/circle-user-round.png"
+          alt="Foto Perfil"
+        />
+      </div>
     </header>
 
     <!-- Sidebar -->
-    <aside class="sidebar fixed top-0 bottom-0 overflow-y-auto p-2 w-60 bg-darkBlue-600">
-        <div class="px-4 mt-32 flex justify-center text-white font-bold text-3xl">
-            <h1>
-                Admin
-            </h1>
-        </div>
-        <hr class="w-auto my-4 bg-white  rounded-sm">
-        <div class="grid grid-cols-7 align-middle items-center">
-            <img src="../img/book-text.png" class="w-5">
-            <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl"><a href="#">Conteudo</a></p>
-            <img src="../img/video.png" class="w-5">
-            <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl"><a href="#">Vídeos</a></p>
-            <img src="../img/message-square-warning.png" class="w-5">
-            <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl"><a href="#">Índices</a></p>
-            <img src="../img/user-round.png" class="w-5">
-            <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl"><a href="#">Usuário</a></p>
-            <img src="../img/tickets.png" class="w-5">
-            <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl"><a href="#">Ticket</a></p>
-        </div>
+    <aside
+      class="sidebar fixed top-0 bottom-0 overflow-y-auto p-2 w-60 bg-darkBlue-600"
+    >
+      <div class="px-4 mt-32 flex justify-center text-white font-bold text-3xl">
+        <h1>Admin</h1>
+      </div>
+      <hr class="w-auto my-4 bg-white rounded-sm" />
+      <div class="grid grid-cols-7 align-middle items-center">
+        <img src="../img/book-text.png" class="w-5" />
+        <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl">
+          <a href="#">Conteudo</a>
+        </p>
+        <img src="../img/video.png" class="w-5" />
+        <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl">
+          <a href="#">Vídeos</a>
+        </p>
+        <img src="../img/message-square-warning.png" class="w-5" />
+        <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl">
+          <a href="#">Índices</a>
+        </p>
+        <img src="../img/user-round.png" class="w-5" />
+        <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl">
+          <a href="#">Usuário</a>
+        </p>
+        <img src="../img/tickets.png" class="w-5" />
+        <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl">
+          <a href="#">Ticket</a>
+        </p>
+      </div>
     </aside>
 
     <!-- Main -->
     <main>
-        <div class=" ml-72 pt-40 p-8"> 
+      <div class="ml-72 pt-40 p-8">
+        <div class="flex align-middle items-center">
+          <svg
+            class="mr-4"
+            width="60px"
+            height="60px"
+            viewBox="-4.32 -4.32 32.64 32.64"
+            id="Layer_1"
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#ffffff"
+            stroke="#ffffff"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0">
+              <rect
+                x="-4.32"
+                y="-4.32"
+                width="32.64"
+                height="32.64"
+                rx="4.2432"
+                fill="#023859"
+                strokewidth="0"
+              ></rect>
+            </g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: none;
+                    stroke: #ffffff;
+                    stroke-miterlimit: 10;
+                    stroke-width: 1.536;
+                  }
+                </style>
+              </defs>
+              <path
+                class="cls-1"
+                d="M18.68,1.48H5.32A3.82,3.82,0,0,0,1.5,5.3v9.54a3.82,3.82,0,0,0,3.82,3.82H9.14L12,21.52l2.86-2.86h3.82a3.82,3.82,0,0,0,3.82-3.82V5.3A3.82,3.82,0,0,0,18.68,1.48Z"
+              ></path>
+              <line
+                class="cls-1"
+                x1="10.09"
+                y1="13.89"
+                x2="13.91"
+                y2="13.89"
+              ></line>
+              <polyline
+                class="cls-1"
+                points="10.09 8.16 12 8.16 12 13.89"
+              ></polyline>
+              <line
+                class="cls-1"
+                x1="11.05"
+                y1="5.3"
+                x2="12.95"
+                y2="5.3"
+              ></line>
+            </g>
+          </svg>
 
-            <div class="flex align-middle items-center">
-
-                <svg class="mr-4" width="76px" height="76px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect width="24" height="24" fill="white"></rect> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.25007 2.38782C8.54878 2.0992 10.1243 2 12 2C13.8757 2 15.4512 2.0992 16.7499 2.38782C18.06 2.67897 19.1488 3.176 19.9864 4.01358C20.824 4.85116 21.321 5.94002 21.6122 7.25007C21.9008 8.54878 22 10.1243 22 12C22 13.8757 21.9008 15.4512 21.6122 16.7499C21.321 18.06 20.824 19.1488 19.9864 19.9864C19.1488 20.824 18.06 21.321 16.7499 21.6122C15.4512 21.9008 13.8757 22 12 22C10.1243 22 8.54878 21.9008 7.25007 21.6122C5.94002 21.321 4.85116 20.824 4.01358 19.9864C3.176 19.1488 2.67897 18.06 2.38782 16.7499C2.0992 15.4512 2 13.8757 2 12C2 10.1243 2.0992 8.54878 2.38782 7.25007C2.67897 5.94002 3.176 4.85116 4.01358 4.01358C4.85116 3.176 5.94002 2.67897 7.25007 2.38782ZM12 6C9.79086 6 8 7.79086 8 10C8 12.2091 9.79086 14 12 14C14.2091 14 16 12.2091 16 10C16 7.79086 14.2091 6 12 6ZM18.3775 17.2942C18.7303 17.8695 18.6055 18.63 18.0369 18.9935C17.5199 19.3241 16.9158 19.5265 16.3159 19.6598C15.2322 19.9006 13.8299 20 11.9998 20C10.1698 20 8.76744 19.9006 7.68381 19.6598C7.09516 19.529 6.50205 19.3319 5.99131 19.012C5.41247 18.6495 5.28523 17.8786 5.64674 17.2991C6.06303 16.6318 6.63676 16.1075 7.40882 15.7344C8.58022 15.1684 10.1157 15 11.9996 15C13.8771 15 15.4109 15.1548 16.5807 15.7047C17.3727 16.077 17.9572 16.6089 18.3775 17.2942Z" fill="#003966"></path> </g></svg>
-   
-                <h1 class=" text-darkBlue-500 font-bold justify-start text-5xl">Gestão de Gráficos</h1>
-        
-            </div>
-           
-                <div class="w-full flex space-x-8 mt-8 justify-between">
-                
-                    <div class="relative">
-
-                        <div class="absolute flex items-center ps-3 pointer-events-none">
-                        
-
-
-                            
-                    </div>
-                </div>
-            </div>
+          <h1 class="text-darkBlue-500 font-bold justify-start text-5xl">
+            Gestão de Gráficos
+          </h1>
         </div>
-    </main>
-</body>
 
+        <!-- div principal 1 -->
+
+        <div class="w-full h-full mt-10 flex justify-between">
+          <!-- gráfico 1 -->
+
+          <div class=" w-96 h-80 rounded-2xl border-2">1</div>
+
+          <!-- gráfico 2 -->
+
+          <div class=" w-96 h-80 rounded-2xl border-2">2</div>
+
+          <!-- gráfico 3 -->
+
+          <div class=" w-96 h-80 rounded-2xl border-2">3</div>
+
+        </div>
+
+        <!-- div principal 2 -->
+
+        <div class="w-full h-full mt-10 flex justify-between">
+
+          <!-- gráfico 4 -->
+
+          <div class="w-[62.5%] h-96 border-2 rounded-2xl">4</div>
+
+          <!-- gráfico 5 -->
+
+          <div class="w-96 h-96 border-2 rounded-2xl">5</div>
+
+        </div>
+
+        <!-- div principal 3 -->
+
+        <div class="w-full h-full mt-10 flex justify-between">
+
+            <!-- gráfico 6 -->
+  
+            <div class="w-[48%] h-96 border-2 rounded-2xl">6</div>
+  
+            <!-- gráfico 7 -->
+  
+            <div class="w-[48%] h-96 border-2 rounded-2xl">7</div>
+  
+        </div>
+
+         <!-- div principal 4 -->
+
+        <div class="w-full h-full mt-10 flex justify-between">
+            <!-- gráfico 8 -->
+  
+            <div class=" w-96 h-80 rounded-2xl border-2">8</div>
+  
+            <!-- gráfico 9 -->
+  
+            <div class=" w-96 h-80 rounded-2xl border-2">9</div>
+  
+            <!-- gráfico 10 -->
+  
+            <div class=" w-96 h-80 rounded-2xl border-2">10</div>
+  
+          </div>
+      </div>
+    </main>
+  </body>
 </html>
