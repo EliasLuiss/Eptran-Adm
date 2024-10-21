@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
+    <link href="../output.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -15,7 +15,7 @@
     <header class="shadow-xl fixed w-full h-28 items-center z-50 bg-darkBlue-500 grid grid-cols-4">
         <div class="col-span-1 flex px-10">
             <a>
-                <img class="w-28" src="img/Logo Eptran.png" alt="Logo">
+                <img class="w-28" src="../img/Logo Eptran.png" alt="Logo">
             </a>
         </div>
         <nav class="col-span-2 flex justify-center">
@@ -31,7 +31,7 @@
                 class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Administrador</a>
         </nav>
         <div class="flex justify-end items-start col-span-1 px-5 ">
-            <img class="w-12 mr-4" src="img/circle-user-round.png" alt="Foto Perfil">
+            <img class="w-12 mr-4" src="../img/circle-user-round.png" alt="Foto Perfil">
         </div>
     </header>
 
@@ -49,15 +49,15 @@
             </div>
             <hr class="w-auto my-4 bg-white  rounded-sm">
             <div class="grid grid-cols-7 align-middle items-center">
-                <img src="img/book-text.png" class="w-5">
+                <img src="../img/book-text.png" class="w-5">
                 <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl"><a href="#">Conteudo</a></p>
-                <img src="img/video.png" class="w-5">
+                <img src="../img/video.png" class="w-5">
                 <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl"><a href="#">Vídeos</a></p>
-                <img src="img/message-square-warning.png" class="w-5">
+                <img src="../img/message-square-warning.png" class="w-5">
                 <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl"><a href="#">Índices</a></p>
-                <img src="img/user-round.png" class="w-5">
+                <img src="../img/user-round.png" class="w-5">
                 <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl"><a href="#">Usuário</a></p>
-                <img src="img/tickets.png" class="w-5">
+                <img src="../img/tickets.png" class="w-5">
                 <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl"><a href="#">Ticket</a></p>
             </div>
         </aside>
@@ -70,81 +70,51 @@
 
             <div class="ml-80 pt-32 p-8">
 
-                <div class="flex space-x-8 mt-10 h-40">
-                    <!-- Primeiro Card -->
-                    <div
-                        class="relative flex items-center justify-center p-4 w-64 h-32 bg-darkBlue-500 text-white rounded-[30px] shadow-xl">
-                        <div class="absolute top-4 left-4">
-                            <img class=" rounded-[10px] w-10 h-10 mt-7" src=".//img/check.png" alt="">
-                        </div>
-                        <div class="ml-10 text-center">
-                            <h1 class="text-3xl font-bold">26,200</h1>
-                            <p class="text-sm">Tickets Resolvidos</p>
-                        </div>
+                <div class="flex align-middle items-center">
+
+                    <svg class="mr-4" width="76px" height="76px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect width="24" height="24" fill="white"></rect> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.25007 2.38782C8.54878 2.0992 10.1243 2 12 2C13.8757 2 15.4512 2.0992 16.7499 2.38782C18.06 2.67897 19.1488 3.176 19.9864 4.01358C20.824 4.85116 21.321 5.94002 21.6122 7.25007C21.9008 8.54878 22 10.1243 22 12C22 13.8757 21.9008 15.4512 21.6122 16.7499C21.321 18.06 20.824 19.1488 19.9864 19.9864C19.1488 20.824 18.06 21.321 16.7499 21.6122C15.4512 21.9008 13.8757 22 12 22C10.1243 22 8.54878 21.9008 7.25007 21.6122C5.94002 21.321 4.85116 20.824 4.01358 19.9864C3.176 19.1488 2.67897 18.06 2.38782 16.7499C2.0992 15.4512 2 13.8757 2 12C2 10.1243 2.0992 8.54878 2.38782 7.25007C2.67897 5.94002 3.176 4.85116 4.01358 4.01358C4.85116 3.176 5.94002 2.67897 7.25007 2.38782ZM12 6C9.79086 6 8 7.79086 8 10C8 12.2091 9.79086 14 12 14C14.2091 14 16 12.2091 16 10C16 7.79086 14.2091 6 12 6ZM18.3775 17.2942C18.7303 17.8695 18.6055 18.63 18.0369 18.9935C17.5199 19.3241 16.9158 19.5265 16.3159 19.6598C15.2322 19.9006 13.8299 20 11.9998 20C10.1698 20 8.76744 19.9006 7.68381 19.6598C7.09516 19.529 6.50205 19.3319 5.99131 19.012C5.41247 18.6495 5.28523 17.8786 5.64674 17.2991C6.06303 16.6318 6.63676 16.1075 7.40882 15.7344C8.58022 15.1684 10.1157 15 11.9996 15C13.8771 15 15.4109 15.1548 16.5807 15.7047C17.3727 16.077 17.9572 16.6089 18.3775 17.2942Z" fill="#003966"></path> </g></svg>
+           
+                
+                    <h1 class=" text-darkBlue-500 font-bold justify-start text-5xl">Gestão de Vídeos</h1>
+                
                     </div>
 
+                    
+                    <div class="w-full flex space-x-8 mt-8 justify-between">
+                
 
-                    <!-- Segundo Card -->
-                    <div
-                        class="relative flex items-center justify-center p-4 w-64 h-32 bg-darkBlue-500 text-white rounded-[30px] shadow-xl">
-                        <div class="absolute top-4 left-4">
-                            <img class=" rounded-[10px] w-12 h-12 mt-6 " src=".//img/clock.png" alt="">
+                        <div class="relative">
+                            <div class="absolute flex items-center ps-3 pointer-events-none">
+                                <svg class="w-4 h-4 mt-2.5 text-darkBlue-500" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                </svg>
+                            </div>
+                            <input type="text" id="procurar"
+                                class="block items-center p-2 ps-10 w-80 text-sm bg-white border shadow-md rounded-lg mb-6"
+                                placeholder="Procurar">
                         </div>
-                        <div class="ml-10">
-                            <h1 class="text-3xl font-bold">15,300</h1>
-                            <p class="text-sm">Chamados Atendidos</p>
-                        </div>
-                    </div>
-
-
-                    <!-- Terceiro Card -->
-                    <div
-                        class="relative flex items-center justify-center p-4 w-64 h-32 bg-darkBlue-500 text-white rounded-[30px] shadow-xl">
-                        <div class="absolute top-4 left-4">
-                            <img class=" rounded-[10px] w-14 h-14 mt-5 " src=".//img/clipboard.png" alt="">
-                        </div>
-                        <div class="ml-10 text-center">
-                            <h1 class="text-3xl font-bold">8,150</h1>
-                            <p class="text-sm">Clientes Satisfeitos</p>
-                        </div>
-                    </div>
-
-
-                    <!-- Quarto Card -->
-                    <div
-                        class="relative flex items-center justify-center p-4 w-64 h-32 bg-darkBlue-500 text-white rounded-[30px] shadow-xl">
-                        <div class="absolute top-4 left-4">
-                            <img class=" rounded-[10px] w-12 h-12 mt-6 " src=".//img/error.png" alt="">
-                        </div>
-                        <div class="ml-10 text-center">
-                            <h1 class="text-3xl font-bold">12,500</h1>
-                            <p class="text-sm">Projetos Concluídos</p>
+                        <div class="justify-between w-full">
+                            <select
+                                class="text-darkBlue-500 block font-semibold p-2 text-sm bg-white border shadow-md rounded-lg mb-6 cursor-pointer"
+                                name="selecionar">
+                                <option class="text-darkBlue-500" value="selecionar" selected>Todos os Usuários</option>
+                                <option value="user-ativo">Usuários Ativos</option>
+                                <option value="user-inativo">Usuários Inativos</option>
+                            </select>
                         </div>
                     </div>
-
-
-                    <!-- Quinto Card -->
-                    <div
-                        class="relative flex items-center justify-center p-4 w-64 h-32 bg-darkBlue-500 text-white rounded-[30px] shadow-xl">
-                        <div class="absolute top-4 left-4">
-                            <img class=" rounded-[10px] w-12 h-12 mt-6 " src=".//img/trash.png" alt="">
-                        </div>
-                        <div class="ml-10 text-center">
-                            <h1 class="text-3xl font-bold">9,800</h1>
-                            <p class="text-sm">Tickets Pendentes</p>
-                        </div>
-                    </div>
-
-
-                </div>
-
 
             </div>
 
 
-            <div class="ml-80  p-8">
+            <!-- Tabela Usuarios -->
+ALA
 
-                <table class="w-full text-sm text-left bg-gray-100">
+            <div class="ml-96 mr-16 w-full">
+
+                <table class="border rounded-xl w-full text-sm text-left bg-white">
                     <thead class="text-blue">
                         <tr class="border-b border-black">
                             <th scope="col" class="px-6 py-3">
@@ -171,140 +141,350 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="border-b border-black hover:bg-gray-50">
+
+                        <!-- linha-tabela-1 -->
+                        <tr class="border-b border-black hover:bg-white">
                             <td class="px-6 py-4">
                                 23222
                             </td>
                             <th scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap">
-                                <img class="w-10 h-10 rounded-full" src="img/salsicha.png" alt="salsicha">
+                                <img class="w-10 h-10 rounded-full" src="../img/salsicha.png" alt="salsicha">
                                 <div class="ps-3">
-                                    <div class="text-base font-semibold">José Silva</div>
+                                    <div class="text-base font-semibold">João Nasario</div>
                                 </div>
                             </th>
                             <td class="px-6 py-4">
-                                jose.silva@gmail.com
+                                Dificuldade para entrar no jogo
                             </td>
                             <td class="px-6 py-4">
-                                <div class=" bg-red-300 flex items-center">
-                                    ♂
+                                <div class=" text-yellow-600 bg-yellow-200 flex items-center justify-center rounded-md mr-3">
+                                    Média
                                 </div>
                             </td>
-                            <td class=" bg-yellow-200 flex items-center mb-5">
-                                11/12/2024
+                            <td class="px-6 py-4">   
+                                <div class=" text-green-600 bg-green-200 flex items-center justify-center rounded-md mr-5">
+                                Em Aberto
+                            </div>
                             </td>
                             <td class="px-6 py-4">
-                                JOINVILLE/SC
+                                <div class="ml-4">
+                                12/10/2024
+                                </div>
+                            </td>
+                             
+                            <td>
+                                <svg class="cursor-pointer" fill="#023859" height="20px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1792 1792" xml:space="preserve" stroke="#023859" onclick="abrirMenu()">
+                                    <g>
+                                        <circle cx="321.4" cy="896.2" r="171.2"></circle>
+                                        <circle cx="898.3" cy="896.2" r="171.2"></circle>
+                                        <circle cx="1469" cy="896.2" r="171.2"></circle>
+                                    </g>
+                                </svg>
                             </td>
 
-
-
                         </tr>
+
+                        <!-- linha-tabela-2 -->
                         <tr class="border-b border-black hover:bg-gray-50">
                             <td class="px-6 py-4">
-                                53243
+                                89232
                             </td>
                             <th scope="row"
                                 class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                <img class="w-10 h-10 rounded-full" src="img/salsicha.png" alt="salsicha">
+                                <img class="w-10 h-10 rounded-full" src="../img/salsicha.png" alt="salsicha">
                                 <div class="ps-3">
-                                    <div class="text-base font-semibold">José Silva</div>
+                                    <div class="text-base font-semibold"> Tiago Ramos</div>
                                 </div>
                             </th>
                             <td class="px-6 py-4">
-                                jose.silva@gmail.com
+                                Dificuldade para entrar no jogo
                             </td>
                             <td class="px-6 py-4">
-                                <div class=" bg-red-300 flex items-center">
-                                    ♂
+                                <div class=" text-red-600 bg-red-200 flex items-center justify-center rounded-md mr-3">
+                                    Alta
                                 </div>
                             </td>
                             <td class="px-6 py-4">
-                                11/12/2024
+                                <div class=" text-yellow-700 bg-yellow-300 flex items-center justify-center rounded-md mr-5">
+                                Em Andamento
+                            </div>
                             </td>
                             <td class="px-6 py-4">
-                                JOINVILLE/SC
+                                <div class="ml-4">
+                                15/04/2024
+                                </div>
+                            </td>
+
+                            <td>
+                                <svg class="cursor-pointer" fill="#023859" height="20px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1792 1792" xml:space="preserve" stroke="#023859" onclick="abrirMenu()">
+                                    <g>
+                                        <circle cx="321.4" cy="896.2" r="171.2"></circle>
+                                        <circle cx="898.3" cy="896.2" r="171.2"></circle>
+                                        <circle cx="1469" cy="896.2" r="171.2"></circle>
+                                    </g>
+                                </svg>
                             </td>
 
                         </tr>
+
+                        <!-- linha-tabela-3 -->
                         <tr class="border-b border-black hover:bg-gray-50">
                             <td class="px-6 py-4">
-                                75654
+                                26345
                             </td>
                             <th scope="row"
                                 class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                <img class="w-10 h-10 rounded-full" src="img/salsicha.png" alt="salsicha">
+                                <img class="w-10 h-10 rounded-full" src="../img/salsicha.png" alt="salsicha">
                                 <div class="ps-3">
-                                    <div class="text-base font-semibold">José Silva</div>
+                                    <div class="text-base font-semibold">João Sezerino</div>
                                 </div>
                             </th>
                             <td class="px-6 py-4">
-                                jose.silva@gmail.com
+                                Dificuldade para entrar no jogo
                             </td>
                             <td class="px-6 py-4">
-                                <div class=" bg-red-300 flex items-center">
-                                    ♂
+                                <div class=" text-yellow-600 bg-yellow-200 flex items-center justify-center rounded-md mr-3">
+                                    Média
                                 </div>
                             </td>
                             <td class="px-6 py-4">
-                                11/12/2024
-                            </td>
-                            <td class="px-6 py-4">
-                                JOINVILLE/SC
-                            </td>
-                        </tr>
-                        <tr class="border-b border-black hover:bg-gray-50">
-                            <td class="px-6 py-4">
-                                23423
-                            </td>
-                            <th scope="row"
-                                class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                <img class="w-10 h-10 rounded-full" src="img/salsicha.png" alt="salsicha">
-                                <div class="ps-3">
-                                    <div class="text-base font-semibold">José Silva</div>
-                                </div>
-                            </th>
-                            <td class="px-6 py-4">
-                                jose.silva@gmail.com
-                            </td>
-                            <td class="px-6 py-4">
-                                <div class=" bg-red-300 flex items-center">
-                                    ♂
+                                <div class=" text-yellow-700 bg-yellow-300 flex items-center justify-center rounded-md mr-5">
+                                    Em Andamento
                                 </div>
                             </td>
                             <td class="px-6 py-4">
-                                11/12/2024
+                                <div class="ml-4">
+                                26/03/2024
+                                </div>
                             </td>
-                            <td class="px-6 py-4">
-                                JOINVILLE/SC
+
+                            <td>
+                                <svg class="cursor-pointer" fill="#023859" height="20px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1792 1792" xml:space="preserve" stroke="#023859" onclick="abrirMenu()">
+                                    <g>
+                                        <circle cx="321.4" cy="896.2" r="171.2"></circle>
+                                        <circle cx="898.3" cy="896.2" r="171.2"></circle>
+                                        <circle cx="1469" cy="896.2" r="171.2"></circle>
+                                    </g>
+                                </svg>
                             </td>
 
                         </tr>
-                        <tr class="dark:bg-gray-900 hover:bg-gray-50 dark:hover:bg-gray-600">
+
+                        <!-- linha-tabela-4 -->
+                        <tr class="border-b border-black hover:bg-gray-50">
                             <td class="px-6 py-4">
-                                98675
+                                86523
                             </td>
                             <th scope="row"
                                 class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                <img class="w-10 h-10 rounded-full" src="img/salsicha.png" alt="salsicha">
+                                <img class="w-10 h-10 rounded-full" src="../img/salsicha.png" alt="salsicha">
                                 <div class="ps-3">
-                                    <div class="text-base font-semibold">José Silva</div>
+                                    <div class="text-base font-semibold">Carlos Cardoso</div>
                                 </div>
                             </th>
                             <td class="px-6 py-4">
-                                jose.silva@gmail.com
+                                Dificuldade para entrar no jogo
                             </td>
                             <td class="px-6 py-4">
-                                <div class="bg-red-300 flex items-center">
-                                    ♂
+                                <div class="  bg-gray-400 flex items-center  justify-center rounded-md mr-3">
+                                    Nenhum
                                 </div>
                             </td>
                             <td class="px-6 py-4">
-                                11/12/2024
+                                <div class=" text-green-600 bg-green-200 flex items-center justify-center rounded-md mr-5">
+                                    Em Aberto
+                                </div>
                             </td>
                             <td class="px-6 py-4">
-                                JOINVILLE/SC
+                                <div class="ml-4">
+                                12/10/2024
+                                </div>
                             </td>
+
+                            <td>
+                                <svg class="cursor-pointer" fill="#023859" height="20px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1792 1792" xml:space="preserve" stroke="#023859" onclick="abrirMenu()">
+                                    <g>
+                                        <circle cx="321.4" cy="896.2" r="171.2"></circle>
+                                        <circle cx="898.3" cy="896.2" r="171.2"></circle>
+                                        <circle cx="1469" cy="896.2" r="171.2"></circle>
+                                    </g>
+                                </svg>
+                            </td>
+
                         </tr>
+
+                        <!-- linha-tabela-5 -->
+                        <tr class="border-b border-black hover:bg-gray-50">
+                            <td class="px-6 py-4">
+                                74354
+                            </td>
+                            <th scope="row"
+                                class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                <img class="w-10 h-10 rounded-full" src="../img/salsicha.png" alt="salsicha">
+                                <div class="ps-3">
+                                    <div class="text-base font-semibold">Henrique Ataide</div>
+                                </div>
+                            </th>
+                            <td class="px-6 py-4">
+                                Dificuldade para entrar no jogo
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-blue-600 bg-blue-200 flex items-center justify-center rounded-md mr-3">
+                                    Baixa
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class=" text-green-600 bg-green-200 flex items-center justify-center rounded-md mr-5">
+                                    Em Aberto
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="ml-4">
+                                19/07/2024
+                                </div>
+                            </td>
+
+                            <td>
+                                <svg class="cursor-pointer" fill="#023859" height="20px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1792 1792" xml:space="preserve" stroke="#023859" onclick="abrirMenu()">
+                                    <g>
+                                        <circle cx="321.4" cy="896.2" r="171.2"></circle>
+                                        <circle cx="898.3" cy="896.2" r="171.2"></circle>
+                                        <circle cx="1469" cy="896.2" r="171.2"></circle>
+                                    </g>
+                                </svg>
+                            </td>
+
+                        </tr>
+
+                        <!-- linha-tabela-6 -->                        
+                        <tr class="border-b border-black hover:bg-gray-50">
+                            <td class="px-6 py-4">
+                                23562
+                            </td>
+                            <th scope="row"
+                                class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                <img class="w-10 h-10 rounded-full" src="../img/salsicha.png" alt="salsicha">
+                                <div class="ps-3">
+                                    <div class="text-base font-semibold">Gustavo Ferreira</div>
+                                </div>
+                            </th>
+                            <td class="px-6 py-4">
+                                Dificuldade para entrar no jogo
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-blue-600 bg-blue-200 flex items-center justify-center rounded-md mr-3">
+                                    Baixa
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class=" text-blue-700 bg-blue-300 flex items-center justify-center rounded-md mr-5">
+                                    Resolvido
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="ml-4">
+                                07/02/2024
+                                </div>
+                            </td>
+
+                            <td>
+                                <svg class="cursor-pointer" fill="#023859" height="20px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1792 1792" xml:space="preserve" stroke="#023859" onclick="abrirMenu()">
+                                    <g>
+                                        <circle cx="321.4" cy="896.2" r="171.2"></circle>
+                                        <circle cx="898.3" cy="896.2" r="171.2"></circle>
+                                        <circle cx="1469" cy="896.2" r="171.2"></circle>
+                                    </g>
+                                </svg>
+                            </td>
+                            
+                        </tr>
+
+                        <!-- linha-tabela-7 -->                        
+                        <tr class="border-b border-black hover:bg-gray-50">
+                            <td class="px-6 py-4">
+                                54373
+                            </td>
+                            <th scope="row"
+                                class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                <img class="w-10 h-10 rounded-full" src="../img/salsicha.png" alt="salsicha">
+                                <div class="ps-3">
+                                    <div class="text-base font-semibold">Vinicius Castilhos</div>
+                                </div>
+                            </th>
+                            <td class="px-6 py-4">
+                                Dificuldade para entrar no jogo
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-yellow-600 bg-yellow-200 flex items-center justify-center rounded-md mr-3">
+                                    Média
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-green-600 bg-green-200 flex items-center justify-center rounded-md mr-5">
+                                    Em Aberto
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="ml-4">
+                                11/01/2024
+                                </div>
+                            </td>
+
+                            <td>
+                                <svg class="cursor-pointer" fill="#023859" height="20px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1792 1792" xml:space="preserve" stroke="#023859" onclick="abrirMenu()">
+                                    <g>
+                                        <circle cx="321.4" cy="896.2" r="171.2"></circle>
+                                        <circle cx="898.3" cy="896.2" r="171.2"></circle>
+                                        <circle cx="1469" cy="896.2" r="171.2"></circle>
+                                    </g>
+                                </svg>
+                            </td>
+
+                        </tr>
+
+                        <!-- linha-tabela-8 -->                        
+                        <tr class=" border-black hover:bg-gray-50 rounded-full-lg">
+                            <td class="px-6 py-4">
+                                43634
+                            </td>
+                            <th scope="row"
+                                class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                <img class="w-10 h-10 rounded-full" src="../img/salsicha.png" alt="salsicha">
+                                <div class="ps-3">
+                                    <div class="text-base font-semibold">Yan Castelen</div>
+                                </div>
+                            </th>
+                            <td class="px-6 py-4">
+                                Dificuldade para entrar no jogo
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-red-600 bg-red-200 flex items-center justify-center rounded-md mr-3">
+                                    Alta
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class=" bg-gray-400 flex items-center justify-center rounded-md mr-5">
+                                    Cancelado
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="ml-4">
+                                    22/09/2024
+                                </div>
+                            </td>
+
+                            <td>
+                                <svg class="cursor-pointer" fill="#023859" height="20px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1792 1792" xml:space="preserve" stroke="#023859" onclick="abrirMenu()">
+                                    <g>
+                                        <circle cx="321.4" cy="896.2" r="171.2"></circle>
+                                        <circle cx="898.3" cy="896.2" r="171.2"></circle>
+                                        <circle cx="1469" cy="896.2" r="171.2"></circle>
+                                    </g>
+                                </svg>
+                            </td>
+
+                        </tr>
+
                     </tbody>
                 </table>
             </div>
