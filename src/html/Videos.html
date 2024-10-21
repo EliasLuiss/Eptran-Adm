@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white">
+
+    <!-- Header -->
+
+    <header class="shadow-xl fixed w-full h-28 items-center z-50 bg-darkBlue-500 grid grid-cols-4">
+        <div class="col-span-1 flex px-10">
+            <a>
+                <img class="w-28" src="../img/Logo Eptran.png" alt="Logo">
+            </a>
+        </div>
+        <nav class="col-span-2 flex justify-center">
+            <a href="ensino.html"
+                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Atividade</a>
+            <a href="#"
+                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Consquistas</a>
+            <a href="sobrenos.html"
+                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Sobre Nós</a>
+            <a href="faleConosco.html"
+                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Fale Conosco</a>
+            <a href="#"
+                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Administrador</a>
+        </nav>
+        <div class="flex justify-end items-start col-span-1 px-5 ">
+            <img class="w-12 mr-4" src="../img/circle-user-round.png" alt="Foto Perfil">
+        </div>
+    </header>
+
+
+    <div class="flex h-full w-10 bg-darkBlue-500 ">
+
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar fixed top-0 bottom-0 overflow-y-auto p-2 w-60 bg-darkBlue-600">
+            <div class="px-4 mt-32 flex justify-center text-white font-bold text-3xl">
+                <h1>
+                    Admin
+                </h1>
+            </div>
+            <hr class="w-auto my-4 bg-white  rounded-sm">
+            <div class="grid grid-cols-7 align-middle items-center">
+                <img src="img/book-text.png" class="w-5">
+                <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl"><a href="#">Conteudo</a></p>
+                <img src="img/video.png" class="w-5">
+                <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl"><a href="#">Vídeos</a></p>
+                <img src="img/message-square-warning.png" class="w-5">
+                <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl"><a href="#">Índices</a></p>
+                <img src="img/user-round.png" class="w-5">
+                <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl"><a href="#">Usuário</a></p>
+                <img src="img/tickets.png" class="w-5">
+                <p class="text-white px-2 py-2 hover:underline col-span-6 text-xl"><a href="#">Ticket</a></p>
+            </div>
+        </aside>
+
+
+        <!-- conteudo -->
+        <main>
+
+            <div class="w-full pl-64 pt-36 mr-80">
+                <h1 class="flex text-darkBlue-500 font-bold justify-start text-6xl pl-10 pt-10">Gestão de Vídeos</h1>
+            </div>
+
+            <div class="ml-72">
+    
+                <div class="w-full flex space-x-8 mt-20 justify-between">
+                        
+                    <div class="relative">
+                        <div class="absolute flex items-center ps-3 pointer-events-none">
+                            <svg class="w-4 h-4 mt-2.5 text-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                            </svg>
+                        </div>
+
+                        <div class="ml-10">
+                        <input type="text" id="procurar"
+                            class="block items-center p-2 ps-10 w-80 text-sm bg-gray-100 shadow-md rounded-lg mb-6"
+                            placeholder="Procurar">
+                         </div>
+                    
+
+                    </div>
+                    <div>
+                        <select
+                            class="text-blue-900 block font-bold p-2 text-sm bg-gray-100 shadow-md rounded-lg mb-6 cursor-pointer"
+                            name="selecionar">
+                            <option  class="text-blue-900 font-bold" value="selecionar" selected>Ensino Médio</option>
+                            <option class="text-blue-900 font-bold" value="user-ativo">Ensino Fundamental</option>
+                            <option class="text-blue-900 font-bold" value="user-inativo">Series Inicias</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select class=" text-blue-900 block font-bold p-2 text-sm bg-gray-100 shadow-md rounded-lg mb-6 cursor-pointer"
+                            name="selecionar">
+                            <option class="text-blue-900 font-bold" value="selecionar" selected>Mais Recentes</option>
+                            <option class="text-blue-900 font-bold" value="user-ativo">Mais Antigos
+                        </select>
+                    </div>
+                    <div>
+                        <button type="button" class=" bg-blue-900 block font-bold p-2 text-sm text-gray-100 shadow-md rounded-lg mb-6 ml-96 cursor-pointer w-60"
+                        name="selecionar">+ Adicionar Vídeo</button>
+                    </div>
+                </div>
+
+                <div class=" rounded-xl w-full h-auto">
+                
+                    <div class="mb-60 p-8 justify-between flex rounded-xl w-full h-40 ">
+
+                        <!-- video 1 -->
+                        <div class="bg-darkBlue-500 text-white font-normal rounded-xl w-64 h-80">
+                            
+                            <img class="rounded-t-xl" src="../img/carros.png" alt="">
+
+                                <div class="flex justify-between text-center text-xs p-2">
+                                    <div class="border w-36 p-1 rounded-lg">Video Educativo Eptran</div>
+                                    <div class="border w-20 p-1 rounded-lg">21/07/2024</div>
+                                </div>
+                                <div class="flex text-xs p-2">
+                                    <div class="border p-1 mr-7 rounded-lg">3:02</div>
+                                    <div class="border p-1 mr-7 rounded-lg">EM</div>
+                                    <div class="border p-1 rounded-lg">207MB</div>
+                                </div>
+                                <div>
+                                    <svg class="cursor-pointer" fill="#023859" height="20px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1792 1792" xml:space="preserve" stroke="#023859" onclick="abrirMenu()"></svg>
+                                </div>
+
+                        </div>
+
+                        <!-- video 2 -->
+                        <div class="bg-darkBlue-500 text-white font-normal rounded-xl w-64 h-80">
+                            
+                            <img class="rounded-t-xl" src="../img/carros.png" alt="">
+
+                                <div class="flex justify-between text-xs p-2">
+                                    <div class="border w-36 p-1 rounded-lg">Video Educativo Eptran</div>
+                                    <div class="border p-1 rounded-lg">21/07/2024</div>
+                                </div>
+                                <div class="flex text-xs p-2">
+                                    <div class="border p-1 mr-7 rounded-lg">3:02</div>
+                                    <div class="border p-1 mr-7 rounded-lg">EM</div>
+                                    <div class="border p-1 rounded-lg">207MB</div>
+                                </div>
+
+                        </div>
+
+                        <!-- video 3 -->
+                        <div class="bg-darkBlue-500 text-white font-normal rounded-xl w-64 h-80">
+                            
+                            <img class="rounded-t-xl" src="../img/carros.png" alt="">
+
+                                <div class="flex justify-between text-xs p-2">
+                                    <div class="border w-36 p-1 rounded-lg">Video Educativo Eptran</div>
+                                    <div class="border p-1 rounded-lg">21/07/2024</div>
+                                </div>
+                                <div class="flex text-xs p-2">
+                                    <div class="border p-1 mr-7 rounded-lg">3:02</div>
+                                    <div class="border p-1 mr-7 rounded-lg">EM</div>
+                                    <div class="border p-1 rounded-lg">207MB</div>
+                                </div>
+
+                        </div>
+
+                        <!-- video 4 -->
+                        <div class="bg-darkBlue-500 text-white font-normal rounded-xl w-64 h-80">
+                            
+                            <img class="rounded-t-xl" src="../img/carros.png" alt="">
+
+                                <div class="flex justify-between text-xs p-2">
+                                    <div class="border w-36 p-1 rounded-lg">Video Educativo Eptran</div>
+                                    <div class="border p-1 rounded-lg">21/07/2024</div>
+                                </div>
+                                <div class="flex text-xs p-2">
+                                    <div class="border p-1 mr-7 rounded-lg">3:02</div>
+                                    <div class="border p-1 mr-7 rounded-lg">EM</div>
+                                    <div class="border p-1 rounded-lg">207MB</div>
+                                </div>
+
+                        </div>
+                    
+                    </div>
+
+
+                    <div class="mb-60 p-8 justify-between flex rounded-xl w-full h-40 ">
+
+                        <!-- video 5 -->
+                        <div class="bg-darkBlue-500 text-white font-normal rounded-xl w-64 h-80">
+                            
+                            <img class="rounded-t-xl" src="../img/carros.png" alt="">
+
+                                <div class="flex justify-between text-xs p-2">
+                                    <div class="border w-36 p-1 rounded-lg">Video Educativo Eptran</div>
+                                    <div class="border p-1 rounded-lg">21/07/2024</div>
+                                </div>
+                                <div class="flex text-xs p-2">
+                                    <div class="border p-1 mr-7 rounded-lg">3:02</div>
+                                    <div class="border p-1 mr-7 rounded-lg">EM</div>
+                                    <div class="border p-1 rounded-lg">207MB</div>
+                                </div>
+
+                        </div>
+
+                        <!-- video 6 -->
+                        <div class="bg-darkBlue-500 text-white font-normal rounded-xl w-64 h-80">
+                            
+                            <img class="rounded-t-xl" src="../img/carros.png" alt="">
+
+                                <div class="flex justify-between text-xs p-2">
+                                    <div class="border w-36 p-1 rounded-lg">Video Educativo Eptran</div>
+                                    <div class="border p-1 rounded-lg">21/07/2024</div>
+                                </div>
+                                <div class="flex text-xs p-2">
+                                    <div class="border p-1 mr-7 rounded-lg">3:02</div>
+                                    <div class="border p-1 mr-7 rounded-lg">EM</div>
+                                    <div class="border p-1 rounded-lg">207MB</div>
+                                </div>
+
+                        </div>
+
+                        <!-- video 7 -->
+                        <div class="bg-darkBlue-500 text-white font-normal rounded-xl w-64 h-80">
+                            
+                            <img class="rounded-t-xl" src="../img/carros.png" alt="">
+
+                                <div class="flex justify-between text-xs p-2">
+                                    <div class="border w-36 p-1 rounded-lg">Video Educativo Eptran</div>
+                                    <div class="border p-1 rounded-lg">21/07/2024</div>
+                                </div>
+                                <div class="flex text-xs p-2">
+                                    <div class="border p-1 mr-7 rounded-lg">3:02</div>
+                                    <div class="border p-1 mr-7 rounded-lg">EM</div>
+                                    <div class="border p-1 rounded-lg">207MB</div>
+                                </div>
+
+                        </div>
+
+                        <!-- video 8 -->
+                        <div class="bg-darkBlue-500 text-white font-normal rounded-xl w-64 h-80">
+                            
+                            <img class="rounded-t-xl" src="../img/carros.png" alt="">
+
+                                <div class="flex justify-between text-xs p-2">
+                                    <div class="border w-36 p-1 rounded-lg">Video Educativo Eptran</div>
+                                    <div class="border p-1 rounded-lg">21/07/2024</div>
+                                </div>
+                                <div class="flex text-xs p-2">
+                                    <div class="border p-1 mr-7 rounded-lg">3:02</div>
+                                    <div class="border p-1 mr-7 rounded-lg">EM</div>
+                                    <div class="border p-1 rounded-lg">207MB</div>
+                                </div>
+
+                        </div>
+                    
+                    </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+    </main>
+</body>
+
+</html>
