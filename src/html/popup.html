@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./popup.js"></script>
+</head>
+<button class="absolute left-50 w-40 h-40 z-50 bg-black " onclick="excluirTicket()"></button>
+<body class="bg-white">
+
+    <!-- Header -->
+
+    <header class="shadow-xl fixed w-full h-28 items-center z-50 bg-darkBlue-500 grid grid-cols-4">
+        <div class="col-span-1 flex px-10">
+            <a>
+                <img class="w-28" src="img/Logo Eptran.png" alt="Logo">
+            </a>
+        </div>
+        <nav class="col-span-2 flex justify-center">
+            <a href="ensino.html"
+                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Atividade</a>
+            <a href="#"
+                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Consquistas</a>
+            <a href="sobrenos.html"
+                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Sobre Nós</a>
+            <a href="faleConosco.html"
+                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Fale Conosco</a>
+            <a href="#"
+                class="hover:underline relative text-lg text-white no-underline font-medium ml-10">Administrador</a>
+        </nav>
+        <div class="flex justify-end items-start col-span-1 px-5 ">
+            <img class="w-12 mr-4" src="img/circle-user-round.png" alt="Foto Perfil">
+        </div>
+    </header>
+
+
+    <div class="flex h-full w-10 bg-darkBlue-500 ">
+
+
+
+
+       
+
+
+
+        <!-- popup ticket exclusão--> <!-- popup sair da conta -->
+        <div class="absolute z-50 bg-black w-[100vw] h-[100vh] bg-opacity-75 hidden" id="popup">
+            <div class="relative top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-50 bg-white w-[500px] h-[350px] opacity-100 rounded-xl p-10">
+                <h1 class=" text-3xl p-2">Quer excluir esse ticket?</h1>
+                <hr class=" border-1 border-darkBlue-500">
+                <p class="p-2">Após excluido, não será mais possível acessar este registro de chamado.</p>
+                <div class="fixed w-[420px] bottom-8">
+                    <button class="bg-red-700 float-end mx-5 me-0 px-5 py-1 rounded-md
+                    font-bold text-white border-2 border-red-700 hover:bg-red-800">Excluir</button>
+                    <button class="bg-slate-100 border-2 border-darkBlue-500 float-end mx-5 me-0 px-5 py-1 rounded-md text-darkBlue-500 font-bold hover:bg-slate-300">Cancelar</button>
+                </div>
+            </div>
+        </div>
+          <!-- popup redefinir senha --> <!-- popup redefinir e-mail --> <!-- popup senha alterada --> 
+        <div class="absolute z-50 bg-black w-[100vw] h-[100vh] bg-opacity-75 " id="popup2">
+            <div class="relative top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-50 bg-white w-[500px] h-[350px] opacity-100 rounded-xl p-10">
+                <h1 class=" text-3xl p-2">Pedido de redefinição de senha enviado.</h1> 
+                                        <!--para email: Pedido de redefinição de e-mail enviado. -->
+                                        <!--para senha alterada: Senha alterada com sucesso.-->
+
+                <hr class=" border-1 border-darkBlue-500">
+                <p class="p-2">Fique de olho no seu e-mail para mais informações.</p>
+                <!-- para e-mail:Fique atento a mensagem de confirmação no seu e-mail novo. -->
+                <!-- para senha alterada: A sua senha foi alterada, não se esqueça mais dela! -->
+            
+                <div class="fixed w-[420px] bottom-8">
+                    <button class="w-full bg-darkBlue-400 text-white h-8 rounded-md hover:bg-blue-950">Ok</button>
+                </div>
+        </div>
+        <!-- popup termos de serviço --> <!-- popup redefinir e-mail --> <!-- popup senha alterada --> 
+       
+    </div>
+    </main>
+    </div>
+
+</body>
+
+
+</html>
